@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Home</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      html {
+        scroll-behavior: smooth; /* Enables smooth scrolling */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Experience</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <p>UI/UX Designer</p>
+          <h1>
+            Hi, I am <span>ISSA</span> <br />
+            from Southern part of Cameroon
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="/aloysia.jpg" alt="About Me Image" />
+          </div>
+
+          <div class="about-col-2">
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+
+            <!-- Skills Section -->
+            <div class="tab-contents active-tab" id="skills">
+              <section id="skills">
+                <div id="skills" class="page">
+                  <div class="containers">
+                    <div class="skills-grid">
+                      <div class="skill-section">
+                        <h3>Front-end</h3>
+                        <div class="skill">
+                          <div class="skill-label">
+                            <span>HTML/CSS</span>
+                            <span>90%</span>
+                          </div>
+                          <div class="skill-bar">
+                            <div
+                              class="skill-progress"
+                              style="width: 90%"
+                            ></div>
+                          </div>
+                        </div>
+                        <div class="skill">
+                          <div class="skill-label">
+                            <span>JavaScript</span>
+                            <span>85%</span>
+                          </div>
+                          <div class="skill-bar">
+                            <div
+                              class="skill-progress"
+                              style="width: 85%"
+                            ></div>
+                          </div>
+                        </div>
+                        <div class="skill">
+                          <div class="skill-label">
+                            <span>React</span>
+                            <span>80%</span>
+                          </div>
+                          <div class="skill-bar">
+                            <div
+                              class="skill-progress"
+                              style="width: 80%"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="skill-section">
+                        <h3>Back-end</h3>
+                        <div class="skill">
+                          <div class="skill-label">
+                            <span>Node.js</span>
+                            <span>85%</span>
+                          </div>
+                          <div class="skill-bar">
+                            <div
+                              class="skill-progress"
+                              style="width: 85%"
+                            ></div>
+                          </div>
+                        </div>
+                        <div class="skill">
+                          <div class="skill-label">
+                            <span>PHP</span>
+                            <span>75%</span>
+                          </div>
+                          <div class="skill-bar">
+                            <div
+                              class="skill-progress"
+                              style="width: 75%"
+                            ></div>
+                          </div>
+                        </div>
+                        <div class="skill">
+                          <div class="skill-label">
+                            <span>SQL</span>
+                            <span>80%</span>
+                          </div>
+                          <div class="skill-bar">
+                            <div
+                              class="skill-progress"
+                              style="width: 80%"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+
+            <!-- Experience Section -->
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2019-2021</span><br />Computer Science at Institut
+                  Superieur de Gestion Douala
+                </li>
+                <li>
+                  <span>2022-2024</span><br />Web Development Training at Seven
+                  Advanced Academy
+                </li>
+                <li>
+                  <span>March 18th - October 30th</span><br />Internship at
+                  Seven Common Factor
+                </li>
+              </ul>
+            </div>
+
+            <!-- Education Section -->
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2019-2021</span><br />UI/UX Designer at Sevent Common
+                  Factor
+                </li>
+                <li>
+                  <span>2022-2024</span><br />Web Development Training at Seven
+                  Advanced Academy
+                </li>
+                <li>
+                  <span>March 18th - October 30th</span><br />Internship at
+                  Seven Common Factor
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
