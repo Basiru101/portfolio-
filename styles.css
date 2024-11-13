@@ -104,7 +104,7 @@
     position: relative;
     overflow: hidden;
     top: 30px;
-    left: 50px;
+    left: 0px;
 
   }
   
@@ -190,6 +190,10 @@
     transform: translateX(-10%);
 }
 
+#south{
+  color: #000;
+}
+
 .skills-title {
     text-align: center;
     font-size: 36px;
@@ -245,7 +249,25 @@
     transition: width 1s ease-in-out;
 }
 
+/*--------------services------------------*/
 
+.services{
+    padding: 30px 0;
+}
+
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+
+.services-list div {
+  background: #262626;
+  padding: 40px;font-size: 11px;
+  font-weight: 300;
+}
 /* Responsive Styles */
 @media (max-width: 1024px) {
     .skills-title {
